@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <section class="message-section">
+        <h2>Escribe tu mensaje inicial</h2>
+
+        <textarea
+          id="user-message"
+          class="user-input"
+          placeholder="Escribe tu mensaje"
+        ></textarea>
+
+        <label for="user-offset" class="user-input">
+          Indica el número de desplazamientos
+          <input id="user-offset" placeholder="#" />
+        </label>
+
+        <div class="buttons-container">
+          <button id="encode-button">Cifrar</button>
+          <button id="decode-button">Descifrar</button>
+        </div>
+      </section>
+
+      <section class="result-section">
+        <h2>Aquí está tu nuevo mensaje</h2>
+        <p id="result-user-message"></p>
+      </section>
+    </main>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
